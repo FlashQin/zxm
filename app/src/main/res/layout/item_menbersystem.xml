@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/shape_whitebac_rec">
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="8dp"
+            android:text="Benefit"
+            android:textColor="#4CA14C"
+            android:textSize="17sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="3dp"
+            android:text="1,You can withdraw order commission on sign up day\n2,The number of orders that can be swiped is 30\n3,The promotion rebate is 12%/9%/5%
+"
+            android:lineSpacingExtra="7dp"
+            android:textColor="#ff353535"
+            android:textSize="11sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@id/txt1" />
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="3dp"
+            android:text="Each order you can get 0.6% commission rate"
+            android:lineSpacingExtra="7dp"
+            android:textColor="#FB641B"
+            android:textSize="11sp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt2" />
+        <TextView
+            android:layout_width="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt3"
+            android:layout_height="10dp"/>
+        <TextView
+            android:id="@+id/txt8"
+            android:layout_width="75dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:textColor="#FFE400"
+            android:background="@drawable/shape_system"
+            android:text="0"
+            android:layout_height="25dp"/>
+        <net.qiujuer.genius.ui.widget.Button
+            android:id="@+id/txtup"
+            android:layout_width="75dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/txt8"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:textColor="#FF5825"
+            android:background="@drawable/shape_system1"
+            android:text="UPGRADE"
+            android:layout_height="25dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

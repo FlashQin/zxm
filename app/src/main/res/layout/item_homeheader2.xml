@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txttitle2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="Order Record"
+        android:paddingTop="17dp"
+        android:paddingBottom="17dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffffff"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remaining available assets"
+        app:layout_constraintTop_toBottomOf="@id/txttitle2"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="13dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="#ff000000"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/txtRemaining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintTop_toBottomOf="@id/txt1"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="13dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="#ff000000"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txttitle2"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="13dp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Today order"
+        android:textColor="#ff000000"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/txtTodaynum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/txt2"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="@id/txt2"
+        app:layout_constraintLeft_toLeftOf="@id/txt2"
+        android:textColor="#ff000000"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtRemaining"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="12dp"
+        android:text="These data are provided by ZXM "
+        android:textColor="#ffa7a7a7"
+
+        android:textSize="10sp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

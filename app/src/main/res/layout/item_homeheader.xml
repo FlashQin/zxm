@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:customAttr="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container1"
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/txt10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="40dp"
+            android:text="Hi 7248220416"
+            android:textColor="@color/colorhometext"
+            android:textSize="17sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtlevl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_greenbac"
+            android:paddingLeft="10dp"
+            android:paddingTop="2dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="2dp"
+            android:text="LV1"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@id/txt10"
+            app:layout_constraintLeft_toRightOf="@+id/txt10"
+            app:layout_constraintTop_toTopOf="@+id/txt10" />
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/relwith"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="40dp"
+
+            android:gravity="center_horizontal"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/imgrechagre"
+                android:layout_width="50dp"
+                android:background="@mipmap/chongzhi"
+                android:layout_marginTop="3dp"
+                android:layout_height="50dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Recharge"
+                android:layout_marginTop="3dp"
+                android:textSize="9sp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="3dp"
+                app:layout_constraintTop_toBottomOf="@id/imgrechagre"
+                app:layout_constraintLeft_toLeftOf="@id/imgrechagre"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relwith"
+            android:layout_width="50dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="40dp"
+
+            android:gravity="center_horizontal"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/imgwith"
+                android:layout_width="50dp"
+                android:background="@drawable/chongzhi_0"
+                android:layout_marginTop="3dp"
+                android:layout_height="50dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Withdraw"
+                android:layout_marginTop="3dp"
+                android:textSize="9sp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="3dp"
+
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/txt11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="11dp"
+            android:text="Your total assets"
+            android:textColor="@color/colorhometext"
+            android:textSize="13sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt10" />
+
+        <TextView
+            android:id="@+id/txttotle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/colorhometext"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="@id/txt11"
+            app:layout_constraintRight_toRightOf="@id/txt11"
+            app:layout_constraintTop_toBottomOf="@id/txt11" />
+
+        <TextView
+            android:id="@+id/txt12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="11dp"
+            android:text="Virtual currency"
+            android:textColor="@color/colorhometext"
+            android:textSize="13sp"
+            app:layout_constraintLeft_toRightOf="@id/txt11"
+            app:layout_constraintTop_toBottomOf="@id/txt10" />
+
+        <TextView
+            android:id="@+id/txtcurrency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/colorhometext"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="@id/txt12"
+            app:layout_constraintRight_toRightOf="@id/txt12"
+            app:layout_constraintTop_toBottomOf="@id/txt12" />
+
+        <TextView
+            android:id="@+id/txtyestday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:textColor="@color/colorhometext"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txt13"
+            app:layout_constraintLeft_toLeftOf="@+id/txt13"
+            app:layout_constraintRight_toRightOf="@+id/txt13" />
+
+        <TextView
+            android:id="@+id/txt13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="12dp"
+            android:text="Yesterday`s earnings"
+            android:textColor="@color/colorhometext"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <TextView
+            android:id="@+id/txtincome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:textColor="@color/colorhometext"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txt14"
+            app:layout_constraintLeft_toLeftOf="@+id/txt14"
+            app:layout_constraintRight_toRightOf="@+id/txt14" />
+
+        <TextView
+            android:id="@+id/txt14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Cumulative income"
+            android:textColor="@color/colorhometext"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/txtToday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:textColor="@color/colorhometext"
+            android:textSize="13sp"
+
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txt15"
+            app:layout_constraintLeft_toLeftOf="@+id/txt15"
+            app:layout_constraintRight_toRightOf="@+id/txt15" />
+
+        <TextView
+            android:id="@+id/txt15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="12dp"
+            android:text="Today`s earnings"
+            android:textColor="@color/colorhometext"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/shape_greybac_big"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/container1">
+
+        <ImageView
+            android:id="@+id/ddddd"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:src="@mipmap/gonggao"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.marquee.dingrui.marqueeviewlib.MarqueeView
+            android:id="@+id/marrr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:marqueeview_repet_type="repet_continuous"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/ddddd"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="50dp"
+            app:marqueeview_text_color="@color/white"
+            android:layout_toRightOf="@+id/ddddd"
+            android:layout_marginRight="6dp"
+            app:marqueeview_text_size="12"
+            app:marqueeview_text_speed="2" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <include layout="@layout/title_bar_two"></include>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="16dp"
+        android:lineSpacingExtra="10dp"
+        android:layout_marginRight="16dp"
+
+        android:text="ZXM is a part-time online order scrolling platform attached to Jumia, an e-commerce company that does its job every day and you will get income from the follow types:"
+        android:textColor="#ff000000"
+        android:textSize="12.5sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+
+        android:layout_marginLeft="16dp"
+        android:text="1.Invite friend to get task Bonus
+                      \n\n2.grab web orders by youself
+                      \n\n3.commissions contributed by friends
+                      \n\n4.Financial benefits
+                      \n\n5. Broker's salary
+"
+        android:textColor="#ff000000"
+        android:textSize="14sp"
+        />
+</LinearLayout>

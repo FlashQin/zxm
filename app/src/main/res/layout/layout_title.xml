@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/frrrrrrrrr"
+    android:layout_height="44dp"
+    android:translationZ="18dp"
+    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_back"
+
+        android:layout_marginLeft="15dp"
+        android:layout_width="44dp"
+        android:layout_height="35dp" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:text="消息中心"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        android:textStyle="normal"
+        android:textSize="18dp"
+        android:lines="1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/len_44" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_gravity="end"
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_right_title"
+            android:textStyle="normal"
+            android:textSize="@dimen/font_12"
+            android:textColor="#FF00B3FF"
+            tools:text="剩余积分: 0"
+            tools:visibility="visible"
+
+            android:gravity="center"
+
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/len_44" />
+
+        <ImageView
+            android:id="@+id/title_img"
+
+            tools:visibility="visible"
+
+            android:visibility="gone"
+            android:layout_gravity="center_vertical"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30" />
+
+    </LinearLayout>
+
+</FrameLayout>

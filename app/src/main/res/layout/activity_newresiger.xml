@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/title_bar_two"></include>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f9f9f9"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginRight="51dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.4"
+                android:text="+234"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:background="@null"
+                android:hint="Enter phone number
+"
+                android:inputType="number"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="51dp"
+            android:background="#ECECEC" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="44dp"
+            android:layout_marginRight="51dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/etusername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="Enter username"
+                android:layout_centerVertical="true"
+
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_14" />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="51dp"
+            android:background="#ECECEC" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="44dp"
+            android:layout_marginRight="51dp"
+            android:layout_marginTop="20dp"
+            android:visibility="visible"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/edtsms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/btncode"
+                android:background="@null"
+                android:hint="Enter SMS verification"
+                android:layout_centerVertical="true"
+                android:inputType="number"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_14" />
+            <Button
+                android:id="@+id/btncode"
+                android:layout_width="48dp"
+                android:text="OTP"
+                android:textColor="@color/colorPrimary"
+                android:layout_alignParentRight="true"
+                android:textSize="12sp"
+                android:background="@drawable/shape_whitebac_rec"
+                android:layout_height="21dp"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="8dp"
+            android:visibility="visible"
+            android:layout_marginRight="51dp"
+            android:background="#ECECEC" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="44dp"
+            android:layout_marginRight="51dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/imglook"
+                android:background="@null"
+                android:hint="Enter password"
+                android:layout_centerVertical="true"
+                android:inputType="textPassword"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_14" />
+            <ImageView
+                android:id="@+id/imglook"
+                android:layout_width="21dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/mima_1"
+                android:layout_height="15dp"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="51dp"
+            android:background="#ECECEC" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="44dp"
+            android:layout_marginRight="51dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/edtrepass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@null"
+                android:hint="Repeat password"
+                android:layout_centerVertical="true"
+                android:inputType="textPassword"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_14" />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="51dp"
+            android:background="#ECECEC" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="44dp"
+            android:layout_marginRight="51dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/edsharetcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@null"
+                android:text="2021ZXM"
+                android:layout_centerVertical="true"
+
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_14" />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="51dp"
+            android:background="#ECECEC" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="33dp"
+        android:background="@drawable/shape_bulebac_small"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:text="Register"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_14" />
+
+
+
+
+</LinearLayout>

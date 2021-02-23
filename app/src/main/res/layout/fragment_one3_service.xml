@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#E9E9E9"
+  >
+
+    <LinearLayout
+        android:id="@+id/linbar"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@mipmap/haibao_1"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingBottom="12dp"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="30dp"
+                android:text="Make sure that Go is installed on your computer. Type the following command in your terminal"
+                android:textColor="#ffffec1b"
+                android:textSize="12sp"
+                />
+            <TextView
+                android:id="@+id/txtlv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/txt1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="10dp"
+                android:text="First-level friends: 10%"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                />
+            <TextView
+                android:id="@+id/txtlv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/txt1"
+                app:layout_constraintLeft_toRightOf="@id/txtlv1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:text="Second-level friends: 8%"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                />
+            <TextView
+                android:id="@+id/txtlv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/txtlv1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="10dp"
+                android:text="Third-level friends: 5%"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                />
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Referral code"
+                app:layout_constraintTop_toBottomOf="@id/txtlv3"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="10dp"
+                android:textColor="#fffff3b1"
+                android:textSize="10sp"
+                />
+            <TextView
+                android:id="@+id/txtcode"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="80dsga32"
+                android:padding="3dp"
+                android:paddingLeft="3dp"
+                app:layout_constraintTop_toBottomOf="@id/txt3"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:background="@drawable/shape_blackwittebac"
+                android:textColor="#ff171717"
+                android:textSize="12sp"
+                />
+            <TextView
+                android:id="@+id/txtcopycode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/txt3"
+                app:layout_constraintLeft_toRightOf="@id/txtcode"
+                android:text="copy"
+                android:paddingTop="4dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="4dp"
+                android:paddingRight="15dp"
+
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/shape_bulebac_big"
+                android:textColor="#ffffffff"
+                android:textSize="13sp"
+                />
+            <TextView
+                android:id="@+id/txt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Referral code"
+                app:layout_constraintTop_toBottomOf="@id/txtcode"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="10dp"
+                android:textColor="#fffff3b1"
+                android:textSize="10sp"
+                />
+            <TextView
+                android:id="@+id/txtlink"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="https://sharemak1111..."
+                android:padding="3dp"
+                android:paddingLeft="3dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintTop_toBottomOf="@id/txt4"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:background="@drawable/shape_blackwittebac"
+                android:textColor="#ff171717"
+                android:textSize="12sp"
+                />
+            <TextView
+                android:id="@+id/txtcopylink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/txt4"
+                app:layout_constraintLeft_toRightOf="@id/txtlink"
+                android:text="copy"
+                android:paddingTop="4dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="4dp"
+                android:paddingRight="15dp"
+
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/shape_bulebac_big"
+                android:textColor="#ffffffff"
+                android:textSize="13sp"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        app:layout_constraintTop_toBottomOf="@+id/linbar"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

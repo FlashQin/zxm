@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/shape_whitebac_rec"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Search and crawl orders"
+        android:layout_marginTop="30dp"
+        android:textColor="#ff000000"
+        android:textSize="20sp"
+        />
+    <ImageView
+        android:layout_width="62dp"
+        android:background="@mipmap/gouwuche"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_height="106dp"/>
+    <com.daimajia.numberprogressbar.NumberProgressBar
+        android:id="@+id/numberbar3"
+        android:layout_toLeftOf="@+id/lindd"
+        android:layout_centerVertical="true"
+        style="@style/NumberProgressBar_Relax_jingli"
+        android:layout_height="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        custom:progress_max="50"
+        custom:progress_current="0" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_height="1dp"/>
+</LinearLayout>

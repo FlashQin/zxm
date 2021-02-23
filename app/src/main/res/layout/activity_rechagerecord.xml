@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title_bar_two"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:text="Time"
+            android:gravity="center_horizontal"
+            android:textColor="#ff6e6e6e"
+            android:textSize="17sp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:text="Amount"
+            android:gravity="center_horizontal"
+            android:textColor="#ff6e6e6e"
+            android:textSize="17sp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:text="Status"
+            android:gravity="center_horizontal"
+            android:textColor="#ff6e6e6e"
+            android:textSize="17sp"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="#ececec"
+        android:layout_marginTop="14dp"
+        android:layout_height="1dp"/>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smallLabel"
+
+        app:srlEnableRefresh="false"
+        app:srlEnableLoadMore="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_whitebac_rec"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="26dp"
+        android:text="Notice"
+        android:textColor="#ff000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtfan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:text="1.Only customers who use Payful upgrades can continue to do
+tasks.\n
+2.The amount you recharged by the bank card, you can withdrawal normally, but the income needs to be activated by Paxful Pay, then you can take it away.\n
+3.Members who are skilled in using Paxful Pay, if interested in
+becoming a ZXM Partner, Contact us by E-mail to learn detail information(zxm01@zxm88.net).
+"
+        android:textColor="@color/black"
+        android:lineSpacingExtra="5dp"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/txttime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="right"
+        android:layout_marginRight="20dp"
+        android:lineSpacingExtra="5dp"
+        android:text="Thanks a lot.\n
+Best Reagards!\n
+Z-X-M Offical Team\n
+Feb. 5th, 2021\n"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    <net.qiujuer.genius.ui.widget.Button
+        android:id="@+id/btnok"
+        android:layout_width="112dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/shape_orgbac_small"
+        android:gravity="center"
+        android:text="YES"
+        android:textColor="@color/white" />
+</LinearLayout>

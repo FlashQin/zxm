@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@drawable/shape_whitebac"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txttype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="17dp"
+            android:text="Type A"
+            android:textColor="#ff000000"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txtdata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="6dp"
+            android:text="One Day+5%(Set 7 days)"
+            android:textColor="#ffe8641b"
+            android:textSize="17sp"
+            />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginRight="17dp"
+            android:layout_height="30dp">
+            <EditText
+                android:id="@+id/edtinput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint= "please enter the transfer amount"
+                android:text="100000"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@null"
+                android:inputType="number"
+                android:textColorHint="#ffc1c1c1"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:background="#ECECEC"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_height="1dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/txtreturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expected return: 0"
+            android:textStyle="bold"
+            android:textColor="#ff000000"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="11dp"
+            android:textSize="17sp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+            <net.qiujuer.genius.ui.widget.Button
+                android:id="@+id/btnno"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="No"
+                android:textSize="18sp"
+                android:background="@drawable/shape_greybac"
+                android:textColor="@color/white"
+                android:layout_marginLeft="17dp"
+                android:gravity="center"
+                android:layout_marginRight="40dp"
+                android:layout_height="40dp"/>
+            <net.qiujuer.genius.ui.widget.Button
+                android:id="@+id/btnyes"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Yes"
+                android:textSize="18sp"
+                android:background="@drawable/shape_orgbac_small"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_marginRight="17dp"
+                android:layout_height="40dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

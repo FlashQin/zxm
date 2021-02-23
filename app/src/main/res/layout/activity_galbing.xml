@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title_bar_two"></include>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="5dp"
+        android:text="Instructions for use"
+        android:textColor="#ff000000"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="19dp"
+        android:text="1: One account can grab 20 order per day \n2：The system is based on ZXM technology， through the cloud automatic matching business"
+        android:textColor="#ff000000"
+        android:textSize="12sp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:background="#ECECEC"
+        android:layout_marginTop="5dp"
+        android:layout_height="1dp"/>
+    <TextView
+        android:id="@+id/txtbaifen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:text="Commission: 0.65% of the product price"
+        android:textColor="#fffb641b"
+        android:textSize="13sp"
+        />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="17dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="82dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="42dp"
+            android:layout_height="82dp"/>
+
+        <TextView
+            android:id="@+id/txtmenberlevl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Member   LV1"
+            android:textColor="#ff000000"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/img1"
+            app:layout_constraintTop_toTopOf="@id/img1" />
+
+        <TextView
+            android:id="@+id/txtsummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:text="summary"
+            android:textColor="#ff363636"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toTopOf="@+id/txtorname"
+            app:layout_constraintLeft_toRightOf="@id/img1" />
+        <TextView
+            android:id="@+id/txtorname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ornaments  500Rs  area"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/img1"
+            app:layout_constraintBottom_toBottomOf="@id/img1"
+            android:textColor="#ff4ca14c"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="13sp"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+        <net.qiujuer.genius.ui.widget.Button
+            android:id="@+id/btnrechage"
+            android:layout_width="142dp"
+            android:layout_weight="1"
+            android:text="Recharge"
+            android:textStyle="bold"
+            android:layout_marginLeft="25dp"
+            android:gravity="center"
+            android:background="@drawable/shape_bulebac_small"
+            android:textSize="18sp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/white"
+            android:layout_height="41dp"/>
+        <net.qiujuer.genius.ui.widget.Button
+            android:id="@+id/btnganble"
+            android:layout_width="142dp"
+            android:layout_weight="1"
+            android:text="Order grabbing"
+            android:textStyle="bold"
+            android:enabled="false"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+
+            android:background="@drawable/selector_bg_shuadan"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_height="41dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Today`s results "
+        android:textStyle="bold"
+        android:layout_marginTop="26dp"
+        android:layout_marginLeft="12dp"
+        android:textColor="#ff000000"
+        android:textSize="15sp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="#e0e0e0"
+        android:layout_height="1dp"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center_horizontal"
+            app:layout_constraintRight_toLeftOf="@id/txt2"
+            app:layout_constraintHorizontal_weight="1"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="Total assets"
+            android:textColor="#ff222222"
+            android:textSize="13sp"
+            />
+        <TextView
+            android:id="@+id/txtassets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/txt1"
+            app:layout_constraintLeft_toLeftOf="@id/txt1"
+            app:layout_constraintRight_toRightOf="@id/txt1"
+            android:layout_marginTop="10dp"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="#fffb641b"
+            android:textSize="13sp"
+            />
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/txt1"
+            app:layout_constraintHorizontal_weight="1"
+            android:text="Today`s order"
+            android:textColor="#ff222222"
+            android:textSize="13sp"
+            />
+        <TextView
+            android:id="@+id/txttodayorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/txt2"
+            app:layout_constraintLeft_toLeftOf="@id/txt2"
+            app:layout_constraintRight_toRightOf="@id/txt2"
+            android:layout_marginTop="10dp"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="#fffb641b"
+            android:textSize="13sp"
+            />
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtassets"
+            android:gravity="center_horizontal"
+            app:layout_constraintRight_toLeftOf="@id/txt4"
+            app:layout_constraintHorizontal_weight="1"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="Yesterday`s earnings"
+            android:textColor="#ff222222"
+            android:textSize="13sp"
+            />
+        <TextView
+            android:id="@+id/txtYesterdayearnings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/txt3"
+            app:layout_constraintLeft_toLeftOf="@id/txt3"
+            app:layout_constraintRight_toRightOf="@id/txt3"
+            android:layout_marginTop="10dp"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="#fffb641b"
+            android:textSize="13sp"
+            />
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/txttodayorder"
+            app:layout_constraintRight_toRightOf="parent"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/txt1"
+            app:layout_constraintHorizontal_weight="1"
+            android:text="Today`s earnings"
+            android:textColor="#ff222222"
+            android:textSize="13sp"
+            />
+        <TextView
+            android:id="@+id/txtTodayearnings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/txt4"
+            app:layout_constraintLeft_toLeftOf="@id/txt4"
+            app:layout_constraintRight_toRightOf="@id/txt4"
+            android:layout_marginTop="10dp"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="#fffb641b"
+            android:textSize="13sp"
+            />
+
+
+        <TextView
+            android:id="@+id/txt5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtYesterdayearnings"
+            android:gravity="center_horizontal"
+            app:layout_constraintRight_toLeftOf="@id/txt6"
+            app:layout_constraintHorizontal_weight="1"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="Yesterday`s team earnings"
+            android:textColor="#ff222222"
+            android:textSize="13sp"
+            />
+        <TextView
+            android:id="@+id/txtYesteamears"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/txt5"
+            app:layout_constraintLeft_toLeftOf="@id/txt5"
+            app:layout_constraintRight_toRightOf="@id/txt5"
+            android:layout_marginTop="10dp"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="#fffb641b"
+            android:textSize="13sp"
+            />
+        <TextView
+            android:id="@+id/txt6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/txtTodayearnings"
+            app:layout_constraintRight_toRightOf="parent"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/txt1"
+            app:layout_constraintHorizontal_weight="1"
+            android:text="Team benefits today"
+            android:textColor="#ff222222"
+            android:textSize="13sp"
+            />
+        <TextView
+            android:id="@+id/txtTeambenftits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/txt6"
+            app:layout_constraintLeft_toLeftOf="@id/txt6"
+            app:layout_constraintRight_toRightOf="@id/txt6"
+            android:layout_marginTop="10dp"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="#fffb641b"
+            android:textSize="13sp"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:gravity="center_vertical"
+        android:background="#D5F0FF"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:text="Order NO."
+            android:gravity="center_horizontal"
+            android:textColor="#ff6e6e6e"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:text="Amount"
+            android:gravity="center_horizontal"
+            android:textColor="#ff6e6e6e"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:text="Earning"
+            android:gravity="right"
+            android:paddingRight="15dp"
+            android:textColor="#ff6e6e6e"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:text="Status"
+            android:gravity="right"
+            android:paddingRight="15dp"
+            android:textColor="#ff6e6e6e"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

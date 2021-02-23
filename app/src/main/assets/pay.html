@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>pay</title>
+</head>
+<body>
+<div id="app">
+  <form method="post" action="https://www.goldengameclub.com/api/pay" id="form">
+    <input type="hidden" name="amount" id="amount" />
+    <input type="hidden" name="appId" id="appId" />
+    <input type="hidden" name="applyDate" id="applyDate" />
+    <input type="hidden" name="email" id="email" />
+    <input type="hidden" name="contactName" id="contactName" />
+    <input type="hidden" name="clientIp" id="clientIp" />
+    <input type="hidden" name="notifyUrl" id="notifyUrl" />
+    <input type="hidden" name="outOrderNo" id="outOrderNo" />
+    <input type="hidden" name="sign" id="sign" />
+    <input type="hidden" name="userId" id="userId" />
+    <input type="hidden" name="channel" id="channel" />
+    <input type="hidden" name="clientSn" id="clientSn" />
+  </form>
+</div>
+<script>
+  function getQueryString(name)
+  {
+      var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+      var r = window.location.search.substr(1).match(reg);
+      if(r!=null)return  unescape(r[2]); return null;
+  }
+  var data = getQueryString('data')
+  if (data) {
+    var obj = JSON.parse(data)
+    for(var prop in obj) {
+      document.getElementById(prop).value = obj[prop]
+    }
+    var form = document.getElementById('form')
+    form.submit()
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ZXM</string>
+    <string name="refishtitle">ZXM</string>
+    <string name="refishpulldown">Pull down to refresh ...</string>
+    <string name="zhengzaishuaxin">Refreshing ...</string>
+    <string name="refishloading">Loading ...</string>
+    <string name="refishrelase">Release and refresh immediately</string>
+    <string name="refishok">Refresh completed </string>
+    <string name="refishfail">Refresh failed </string>
+    <string name="refishlasttime">Last update M-d HH:mm</string>
+    <string name="refishconetnt">ZXM</string>
+    <string name="str_get_sms_code">OTP</string>
+    <string name="loadmoretitle">Pull up to load more ...</string>
+    <string name="loadmorecontent">Release and load immediately</string>
+    <string name="loadmoreloading">Loading ....</string>
+    <string name="loadmorehok">Loading completed </string>
+    <string name="loadmorefail">Loading failed </string>
+    <string name="loadmorerelasecontent">Release and load immediately</string>
+    <string name="loadmorenodata">No more data</string>
+</resources>

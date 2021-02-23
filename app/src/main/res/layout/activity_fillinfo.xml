@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title_bar_two"></include>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:text="Bank information"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="25dp"
+                android:background="@mipmap/anniu_8"
+                android:layout_marginLeft="12dp"
+                android:layout_height="25dp"/>
+            <EditText
+                android:id="@+id/edtname"
+                android:layout_width="match_parent"
+                android:hint="Enter your name"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:background="@null"
+                android:textColor="#000000"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="#ECECEC"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="55dp"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="25dp"
+                android:background="@mipmap/anniu_9"
+                android:layout_marginLeft="12dp"
+                android:layout_height="25dp"/>
+            <EditText
+                android:id="@+id/edtphone"
+                android:layout_width="match_parent"
+                android:hint="Enter your mobile phone number"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:background="@null"
+                android:textColor="#000000"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="#ECECEC"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="55dp"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="25dp"
+                android:background="@mipmap/anniu_10"
+                android:layout_marginLeft="12dp"
+                android:layout_height="25dp"/>
+            <EditText
+                android:id="@+id/edtbankno"
+                android:layout_width="match_parent"
+                android:hint="Enter your bank account"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:background="@null"
+                android:textColor="#000000"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="#ECECEC"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="55dp"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="25dp"
+                android:background="@mipmap/anniu_11"
+                android:layout_marginLeft="12dp"
+                android:layout_height="25dp"/>
+            <EditText
+                android:id="@+id/edtifsc"
+                android:layout_width="match_parent"
+                android:hint="Enter your IFSC account"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:background="@null"
+                android:textColor="#000000"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="#ECECEC"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="55dp"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="25dp"
+                android:background="@mipmap/anniu_12"
+                android:layout_marginLeft="12dp"
+                android:layout_height="25dp"/>
+            <EditText
+                android:id="@+id/edtpassword"
+                android:layout_width="match_parent"
+                android:hint="Enter your fund password"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:background="@null"
+                android:textColor="#000000"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="#ECECEC"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="25dp"
+                android:background="@mipmap/anniu_13"
+                android:layout_marginLeft="12dp"
+                android:layout_height="25dp"/>
+            <EditText
+                android:id="@+id/edtsurepass"
+                android:layout_width="match_parent"
+                android:hint="Reconfirm password"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:background="@null"
+                android:textColor="#000000"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="#ECECEC"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="55dp"
+            android:layout_height="1dp"/>
+
+        <net.qiujuer.genius.ui.widget.Button
+            android:id="@+id/btnmodiftinfo"
+            android:layout_width="match_parent"
+            android:layout_marginTop="35dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginBottom="25dp"
+            android:textStyle="bold"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/shape_orgbac_small"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:text="Save"
+            android:layout_height="40dp"/>
+    </LinearLayout>
+
+</LinearLayout>

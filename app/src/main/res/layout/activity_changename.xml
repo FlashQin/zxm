@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/title_bar_two"></include>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="25dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="15dp"
+            android:layout_height="25dp"/>
+        <EditText
+            android:id="@+id/edtname"
+            android:layout_width="match_parent"
+            app:layout_constraintLeft_toRightOf="@+id/img"
+            app:layout_constraintTop_toTopOf="parent"
+            android:hint="Enter your new name"
+            android:layout_marginLeft="60dp"
+            android:background="@null"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_height="wrap_content"/>
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:background="#e0e0e0"
+            app:layout_constraintTop_toBottomOf="@+id/img"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="1dp"/>
+
+        <net.qiujuer.genius.ui.widget.Button
+            android:id="@+id/btnsave"
+            android:layout_width="match_parent"
+            android:text="Save"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintTop_toBottomOf="@+id/view"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:layout_marginLeft="25sp"
+            android:background="@drawable/shape_bulebac_big"
+            android:layout_marginRight="25dp"
+            android:layout_height="50dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
